@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maison du Macaron — Pâtisserie Aix-en-Provence</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;color:#3d2b1f;background:#fff7f2;line-height:1.6}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:60px;position:relative;background:#f5e6d8}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(48px,7vw,90px);font-weight:400;line-height:1;color:#3d2b1f;margin-bottom:16px}
+.hero p{font-size:18px;color:#7a5c47;max-width:440px;margin-bottom:32px}
+.hero a{display:inline-block;padding:14px 40px;background:#3d2b1f;color:#fff7f2;text-decoration:none;font-size:13px;letter-spacing:1.5px;text-transform:uppercase}
+.hero nav{position:absolute;top:0;left:0;right:0;padding:32px 60px;display:flex;justify-content:space-between;align-items:center}
+.hero nav .logo{font-family:'Playfair Display',serif;font-size:22px;color:#3d2b1f}
+.hero nav a{color:#7a5c47;text-decoration:none;margin-left:28px;font-size:14px}
+.section{padding:80px 60px;max-width:1200px;margin:0 auto}
+.section h2{font-family:'Playfair Display',serif;font-size:36px;font-weight:400;margin-bottom:12px;text-align:center}
+.section .subtitle{text-align:center;color:#7a5c47;font-size:15px;margin-bottom:56px}
+.masonry{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.item{background:#f5e6d8;border-radius:16px;padding:32px;min-height:220px;display:flex;flex-direction:column;justify-content:flex-end;transition:.2s}
+.item:nth-child(2){min-height:300px}
+.item:nth-child(4){min-height:280px}
+.item h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:400;margin-bottom:4px;color:#3d2b1f}
+.item p{font-size:13px;color:#7a5c47}
+.item .price{font-size:13px;color:#3d2b1f;margin-top:8px;font-weight:500}
+.order{padding:80px 60px;background:#3d2b1f;color:#fff7f2;text-align:center}
+.order h2{font-family:'Playfair Display',serif;font-size:36px;font-weight:400;margin-bottom:12px}
+.order p{color:#d4b8a0;font-size:15px;margin-bottom:32px}
+.order a{display:inline-block;padding:14px 40px;border:1px solid #fff7f2;color:#fff7f2;text-decoration:none;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;transition:.2s}
+.order a:hover{background:#fff7f2;color:#3d2b1f}
+.contact{padding:60px;text-align:center}
+.contact p{font-size:14px;color:#7a5c47;margin-bottom:4px}
+.footer{text-align:center;padding:28px;font-size:12px;color:#b89b85;border-top:1px solid #f0e0d4}
+@media(max-width:900px){.hero{padding:40px 24px;height:auto;min-height:80vh}.hero nav{padding:20px 24px}.section{padding:60px 24px}.masonry{grid-template-columns:1fr 1fr}.order{padding:60px 24px}}
+@media(max-width:600px){.masonry{grid-template-columns:1fr}}
+</style></head>
+<body>
+<header class="hero"><nav><div class="logo">Maison du Macaron</div><div><a href="#collection">Collection</a><a href="#commande">Commander</a><a href="#contact">Contact</a></div></nav>
+<h1>Le macaron,<br>revisité à la<br>provençale.</h1>
+<p>Coques croquantes, ganaches onctueuses, parfums du Sud. Fabriqués à la main chaque matin à Aix.</p>
+<a href="#collection">Découvrir</a></header>
+<section class="section" id="collection"><h2>La collection</h2><p class="subtitle">Des saveurs qui changent au fil des saisons.</p>
+<div class="masonry">
+<div class="item"><h3>Pistache</h3><p>Pistache de Sicile, éclats croquants</p><div class="price">2,20 €</div></div>
+<div class="item"><h3>Rose & Litchi</h3><p>Parfum d'Ispahan, léger et floral</p><div class="price">2,20 €</div></div>
+<div class="item"><h3>Citron Basilic</h3><p>Citron de Menton, basilic frais du jardin</p><div class="price">2,20 €</div></div>
+<div class="item"><h3>Miel Lavande</h3><p>Miel de lavande des Alpilles</p><div class="price">2,30 €</div></div>
+<div class="item"><h3>Chocolat Noir</h3><p>Guanaja 70%, ganache intense</p><div class="price">2,20 €</div></div>
+<div class="item"><h3>Calisson</h3><p>Amande, melon confit, fleur d'oranger</p><div class="price">2,30 €</div></div>
+</div></section>
+<section class="order" id="commande"><h2>Commandes sur mesure</h2><p>Mariages, baptêmes, entreprises — nous personnalisons couleurs, saveurs et packaging. Devis sous 24h.</p>
+<a href="#contact">Demander un devis</a></section>
+<section class="contact" id="contact"><p>12 Rue Aude, 13100 Aix-en-Provence</p><p>commandes@maisondumacaron.fr — 04 42 27 99 10</p><p>Mar–Dim : 9h–13h / 14h–19h</p></section>
+<div class="footer">Maison du Macaron — Aix-en-Provence</div>
+</body></html>
